@@ -1,0 +1,11 @@
+Error: No server has been chosen.
+[Error - 5:47:09 PM] Please report this issue to https://github.com/microsoft/al/issues including information on how to reproduce it, if possible.
+Processing of message 'al/createPackage' failed with error: 'Object reference not set to an instance of an object.'
+Details:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Dynamics.Nav.EditorServices.Protocol.Utility.ActiveProjectBuilder.Build(VsCodeWorkspace workspace, Project builtProject, StreamingTextWriter outputWriter, Boolean isRad, IList`1 args, CancellationToken cancellationToken, IResponseQueue responseQueue, ITelemetryService telemetryService, Boolean forceBuild, IList`1 outputFiles, CustomTelemetryEvent telemetryEvent, String requestVsCodeExtensionVersion) in X:\Prod\Microsoft.Dynamics.Nav.EditorServices.Protocol\Utility\ActiveProjectBuilder.cs:line 176
+   at Microsoft.Dynamics.Nav.EditorServices.Protocol.Utility.ActiveProjectBuilder.BuildWorkspaceAsync(CancellationToken cancellationToken, IFileSystem fileSystem, VsCodeWorkspace workspace, String projectDir, IList`1 args, Boolean buildDependencyPackage, Boolean isRad, IResponseQueue responseQueue, Boolean forceBuildOfAllDependencies, CustomTelemetryEvent telemetryEvent, ITelemetryService telemetryService, String vsCodeExtensionVersion) in X:\Prod\Microsoft.Dynamics.Nav.EditorServices.Protocol\Utility\ActiveProjectBuilder.cs:line 115
+   at Microsoft.Dynamics.Nav.EditorServices.Protocol.LanguageServer.Extensions.CreatePackageRequestHandler.HandleAsync(CreatePackageRequest request, Int32 requestId, CancellationToken cancellationToken) in X:\Prod\Microsoft.Dynamics.Nav.EditorServices.Protocol\LanguageServer\Extensions\CreatePackageRequestHandler.cs:line 37
+   at Microsoft.Dynamics.Nav.EditorServices.Protocol.MessageProtocol.RequestHandlerBase`1.HandleAsync(JToken requestContents, Int32 requestId, CancellationToken cancellationToken) in X:\Prod\Microsoft.Dynamics.Nav.EditorServices.Protocol\MessageProtocol\RequestHandlerBase.cs:line 84
+   at Microsoft.Dynamics.Nav.EditorServices.Protocol.RequestRegistry.Process(Message message) in X:\Prod\Microsoft.Dynamics.Nav.EditorServices.Protocol\Endpoints\RequestRegistry.cs:line 84
+
